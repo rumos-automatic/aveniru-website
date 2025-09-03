@@ -1,0 +1,12 @@
+<svg width="400" height="200" xmlns="http://www.w3.org/2000/svg">
+  <rect width="400" height="200" fill="#f8f9fa" stroke="#dee2e6" stroke-width="1"/>
+  
+  <!-- 所在地 -->
+  <text x="20" y="40" font-family="'Noto Sans JP', sans-serif" font-size="14" font-weight="bold" fill="#495057">所在地</text>
+  <text x="20" y="60" font-family="'Noto Sans JP', sans-serif" font-size="13" fill="#495057">〒460-0016</text>
+  <text x="20" y="80" font-family="'Noto Sans JP', sans-serif" font-size="13" fill="#495057">名古屋市中区橘1-10-12 セイント橘306</text>
+  
+  <!-- 代表取締役 -->
+  <text x="20" y="120" font-family="'Noto Sans JP', sans-serif" font-size="14" font-weight="bold" fill="#495057">代表取締役</text>
+  <text x="20" y="140" font-family="'Noto Sans JP', sans-serif" font-size="13" fill="#495057">大岩 涼太</text>
+</svg>

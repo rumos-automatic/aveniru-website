@@ -1,39 +1,10 @@
 'use client';
 
-import { useEffect, useRef } from 'react';
 import { motion } from 'framer-motion';
-import { Building2, MapPin, User, Calendar, CreditCard, FileText, Phone, Mail } from 'lucide-react';
+import { Building2, Calendar, CreditCard, FileText, Mail } from 'lucide-react';
+import Image from 'next/image';
 
 export default function CompanyPage() {
-  const canvasRef = useRef<HTMLCanvasElement>(null);
-
-  useEffect(() => {
-    // Canvas APIで代表者名を画像として生成
-    const canvas = canvasRef.current;
-    if (canvas) {
-      const ctx = canvas.getContext('2d');
-      if (ctx) {
-        // 高解像度対応
-        const scale = 2;
-        canvas.width = 150 * scale;
-        canvas.height = 30 * scale;
-        canvas.style.width = '150px';
-        canvas.style.height = '30px';
-        
-        ctx.scale(scale, scale);
-        
-        // 背景を透明に
-        ctx.clearRect(0, 0, 150, 30);
-        
-        // テキスト設定
-        ctx.font = '16px sans-serif';
-        ctx.fillStyle = '#374151'; // text-gray-700
-        ctx.textBaseline = 'middle';
-        ctx.fillText('大岩 涼太', 0, 15);
-      }
-    }
-  }, []);
-
   const companyInfo = [
     {
       icon: <Building2 className="w-5 h-5" />,
@@ -41,38 +12,29 @@ export default function CompanyPage() {
       value: '株式会社 AveniRu'
     },
     {
-      icon: <MapPin className="w-5 h-5" />,
-      label: '所在地',
-      value: '〒XXX-XXXX 東京都〇〇区〇〇'
-    },
-    {
-      icon: <User className="w-5 h-5" />,
-      label: '代表者',
-      value: 'canvas' // 特別処理
-    },
-    {
       icon: <Calendar className="w-5 h-5" />,
       label: '設立',
-      value: '202X年XX月'
+      value: '2025年1月'
     },
     {
       icon: <CreditCard className="w-5 h-5" />,
       label: '資本金',
-      value: 'XXX万円'
+      value: '100万円'
     },
     {
       icon: <FileText className="w-5 h-5" />,
       label: '事業内容',
-      value: '欧米輸入品の調達・卸売・小売（Amazon等）／輸入代行／物流・価格最適化'
+      value: '欧米輸入品の調達・卸売・小売（Amazon等）／輸入代行／物流・価格最適化／AIを活用したシステム開発'
     },
   ];
 
   const businessDetails = [
     '米国・欧州からの商品調達',
     '輸入代行サービス',
-    'Amazon店舗運営（Dolphin STORE、LumieRu STORE、ChaRudonnay STORE）',
+    'Amazon店舗運営（ChaRudonnay STORE、LumieRu STORE、Lemon ストア）',
     '物流最適化コンサルティング',
     '価格戦略・在庫管理システムの提供',
+    'AIを活用したシステム開発',
   ];
 
   return (
@@ -104,6 +66,18 @@ export default function CompanyPage() {
             className="bg-white rounded-lg shadow-lg p-8"
           >
             <h2 className="text-2xl font-semibold mb-6 text-gray-800">会社概要</h2>
+            
+            {/* 所在地と代表者情報を画像として表示 */}
+            <div className="mb-6 p-4 bg-gray-50 rounded-lg">
+              <Image 
+                src="/images/company-info.svg" 
+                alt="会社所在地・代表者情報" 
+                width={400} 
+                height={200} 
+                className="max-w-full h-auto"
+              />
+            </div>
+
             <dl className="space-y-4">
               {companyInfo.map((item, index) => (
                 <div key={index} className="flex items-start">
@@ -112,28 +86,11 @@ export default function CompanyPage() {
                     <span className="ml-2 text-sm font-medium text-gray-700">{item.label}</span>
                   </dt>
                   <dd className="text-gray-600">
-                    {item.value === 'canvas' ? (
-                      <canvas 
-                        ref={canvasRef}
-                        className="inline-block"
-                        aria-label="代表者名"
-                      />
-                    ) : (
-                      item.value
-                    )}
+                    {item.value}
                   </dd>
                 </div>
               ))}
             </dl>
-
-            <div className="mt-6 pt-6 border-t">
-              <h3 className="font-semibold mb-3 text-gray-800">主要取引</h3>
-              <ul className="space-y-2 text-gray-600">
-                <li>・主要取引先国: 米国・欧州</li>
-                <li>・主要取引銀行: XXX銀行（XX支店）</li>
-                <li>・適格請求書発行事業者登録番号: T-XXXXXXXXXXXX</li>
-              </ul>
-            </div>
           </motion.div>
 
           {/* 事業詳細 */}

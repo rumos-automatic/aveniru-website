@@ -25,10 +25,8 @@ const Footer = () => {
           <div>
             <h4 className="font-semibold mb-3">法務情報</h4>
             <ul className="space-y-2 text-gray-200">
-              <li><Link href="/legal/specified-commercial-transaction" className="hover:text-white">特定商取引法に基づく表記</Link></li>
-              <li><Link href="/legal/privacy" className="hover:text-white">プライバシーポリシー</Link></li>
-              <li><Link href="/legal/returns" className="hover:text-white">返品・交換ポリシー</Link></li>
-              <li><Link href="/legal/cookies" className="hover:text-white">Cookieポリシー</Link></li>
+              <li><Link href="/tokusho" className="hover:text-white">特定商取引法に基づく表記</Link></li>
+              <li><Link href="/company" className="hover:text-white">会社情報</Link></li>
             </ul>
           </div>
         </div>

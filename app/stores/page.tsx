@@ -6,28 +6,28 @@ import { ShoppingBag, Star, TrendingUp, Shield } from 'lucide-react';
 export default function StoresPage() {
   const stores = [
     {
-      name: 'Dolphin STORE',
-      categories: '欧米輸入雑貨・日用品・ガジェット',
-      description: '生活を豊かにする輸入雑貨を幅広く取り扱い。実用性とデザイン性を兼ね備えた商品をセレクト。',
-      features: ['豊富な品揃え', '迅速な配送', '安心の品質保証'],
-      url: '#', // 実際のURLに置き換え
-      color: 'from-blue-500 to-cyan-500'
+      name: 'ChaRudonnay STORE',
+      categories: 'アパレル・シューズ',
+      description: 'セレクトしたアパレル・シューズを提供。サイズ展開豊富で、幅広いニーズに対応。',
+      features: ['豊富なサイズ', 'シーズン対応', '返品交換対応'],
+      url: 'https://www.amazon.co.jp/sp?is-secure=true&&ie=UTF8&seller=A3MLPUNUEKTO0I&isAmazonFulfilled=0&asin=B07HGHBMSS&ref_=olp_merch_name_1',
+      color: 'from-orange-500 to-red-500'
     },
     {
       name: 'LumieRu STORE',
       categories: 'ファッション小物・アクセサリー',
       description: 'トレンドを押さえたファッション小物を展開。お手頃価格で高品質なアイテムをお届けします。',
       features: ['最新トレンド', 'リーズナブル', 'ギフト対応'],
-      url: '#', // 実際のURLに置き換え
+      url: 'https://www.amazon.co.jp/sp?is-secure=true&&ie=UTF8&seller=ANFCQ9BFFRJOL&isAmazonFulfilled=0&asin=B09QSSXDHP&ref_=olp_merch_name_1',
       color: 'from-purple-500 to-pink-500'
     },
     {
-      name: 'ChaRudonnay STORE',
-      categories: 'アパレル・シューズ',
-      description: 'セレクトしたアパレル・シューズを提供。サイズ展開豊富で、幅広いニーズに対応。',
-      features: ['豊富なサイズ', 'シーズン対応', '返品交換対応'],
-      url: '#', // 実際のURLに置き換え
-      color: 'from-orange-500 to-red-500'
+      name: 'Lemon ストア',
+      categories: '欧米輸入雑貨・日用品・ガジェット',
+      description: '生活を豊かにする輸入雑貨を幅広く取り扱い。実用性とデザイン性を兼ね備えた商品をセレクト。',
+      features: ['豊富な品揃え', '迅速な配送', '安心の品質保証'],
+      url: 'https://www.amazon.co.jp/sp?is-secure=true&&ie=UTF8&seller=A219DXTDUNHNA1&isAmazonFulfilled=0&asin=B07TYQV1HS&ref_=olp_merch_name_1',
+      color: 'from-yellow-400 to-yellow-500'
     }
   ];
 

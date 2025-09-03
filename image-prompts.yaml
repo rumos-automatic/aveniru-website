@@ -1,0 +1,195 @@
+# AveniRu コーポレートサイト用 画像生成AIプロンプト
+# 使用推奨AI: Midjourney, DALL-E 3, Stable Diffusion XL
+
+general_settings:
+  style: "photorealistic, professional, corporate, clean, modern"
+  quality: "8K, ultra detailed, high resolution, sharp focus"
+  lighting: "soft natural lighting, studio lighting"
+  color_palette: "blue, white, orange accent, professional tones"
+  negative_prompts: "low quality, blurry, distorted, amateur, dark, gloomy"
+
+images:
+  # ヒーローセクション画像
+  hero_international_logistics:
+    filename: "hero-logistics.jpg"
+    dimensions: "1200x675"
+    prompt: |
+      Professional corporate photography of modern international logistics center,
+      cargo plane loading containers in background,
+      organized warehouse with packages in foreground,
+      blue and white color scheme,
+      bright clean environment,
+      workers in professional uniforms,
+      conveyor belts with packages,
+      digital displays showing tracking information,
+      photorealistic, 8K quality, soft morning light,
+      depth of field, professional commercial photography
+    negative: "people's faces close-up, messy, dark, cluttered"
+    
+  # 品質管理画像
+  quality_control:
+    filename: "quality-control.jpg"
+    dimensions: "400x300"
+    prompt: |
+      Professional quality control inspection area,
+      clean white tables with products being inspected,
+      professional inspector with clipboard and barcode scanner,
+      organized shelving system in background,
+      bright LED lighting,
+      measuring tools and laptop on desk,
+      QR codes and documentation visible,
+      ultra clean environment,
+      photorealistic corporate photography,
+      shallow depth of field
+    negative: "messy workspace, poor lighting, unprofessional"
+    
+  # 物流センター画像
+  logistics_center:
+    filename: "logistics-center.jpg"
+    dimensions: "400x300"
+    prompt: |
+      Modern automated logistics distribution center interior,
+      high ceiling warehouse with organized rack system,
+      forklift operating in wide aisle,
+      LED lighting strips,
+      packages on conveyor system,
+      clean concrete floors with safety markings,
+      professional industrial photography,
+      wide angle lens,
+      bright and organized space,
+      blue and orange safety colors
+    negative: "cluttered, dark, unsafe conditions, old equipment"
+    
+  # カスタマーサポート画像
+  customer_support:
+    filename: "customer-support.jpg"
+    dimensions: "400x300"
+    prompt: |
+      Modern corporate customer service office,
+      professional Japanese business person at desk with headset,
+      multiple monitors showing logistics tracking systems,
+      clean minimal office design,
+      plants and natural light from windows,
+      organized desk with documents,
+      warm professional atmosphere,
+      business casual attire,
+      photorealistic office photography,
+      soft natural lighting
+    negative: "messy desk, unprofessional appearance, dark room"
+
+  # サービスページ用画像
+  service_images:
+    import_process:
+      filename: "import-process.jpg"
+      dimensions: "800x450"
+      prompt: |
+        Split screen composition showing USA warehouse and Japan destination,
+        left side: American fulfillment center with US flag,
+        right side: Japanese distribution center with Japanese flag,
+        cargo plane flying between them in sky,
+        world map overlay with dotted line route,
+        professional infographic style photography,
+        bright and clean,
+        blue sky background
+      negative: "confusing layout, dark, unprofessional"
+      
+    customs_clearance:
+      filename: "customs-clearance.jpg"
+      dimensions: "800x450"
+      prompt: |
+        Professional customs office environment,
+        customs officer checking documents,
+        organized filing system,
+        computer screens with customs software,
+        official stamps and seals visible,
+        import documentation on desk,
+        bright office lighting,
+        professional government office atmosphere,
+        photorealistic documentary style
+      negative: "chaotic, informal, unclear documentation"
+      
+    packaging_service:
+      filename: "packaging-service.jpg"
+      dimensions: "800x450"
+      prompt: |
+        Professional packaging station,
+        worker carefully packing products in branded boxes,
+        bubble wrap and protective materials,
+        label printer and shipping labels,
+        organized packaging supplies shelves,
+        clean work environment,
+        efficiency and care demonstrated,
+        professional commercial photography,
+        bright workshop lighting
+      negative: "damaged packages, messy workspace, poor packaging"
+
+  # FAQ/問い合わせページ用
+  contact_support:
+    filename: "contact-support.jpg"
+    dimensions: "1200x400"
+    prompt: |
+      Modern Japanese business office meeting room,
+      professional consultation scene,
+      laptop and documents on meeting table,
+      clean minimal interior design,
+      large windows with city view,
+      plants for warm atmosphere,
+      business professionals in discussion,
+      photorealistic corporate photography,
+      soft natural lighting,
+      professional yet approachable atmosphere
+    negative: "casual, unprofessional, messy, dark"
+
+  # 会社情報ページ用
+  company_office:
+    filename: "company-office.jpg"
+    dimensions: "1200x600"
+    prompt: |
+      Modern corporate office building exterior in Japan,
+      glass and steel architecture,
+      clean lines and professional design,
+      business district setting,
+      blue sky with few clouds,
+      some greenery and landscaping,
+      daytime shot with good lighting,
+      architectural photography style,
+      wide angle view,
+      impressive yet approachable
+    negative: "old building, residential area, poor maintenance"
+
+# アイコン/小画像用
+icons:
+  fast_delivery:
+    filename: "icon-fast-delivery.png"
+    dimensions: "200x200"
+    prompt: |
+      Isometric 3D icon of express delivery,
+      delivery truck with motion lines,
+      clock showing speed,
+      blue and orange colors,
+      clean vector style,
+      white background,
+      professional icon design
+      
+  secure_handling:
+    filename: "icon-secure.png"
+    dimensions: "200x200"
+    prompt: |
+      Isometric 3D icon of secure package,
+      package with shield and checkmark,
+      blue and green colors,
+      clean vector style,
+      white background,
+      professional icon design
+      
+  global_network:
+    filename: "icon-global.png"
+    dimensions: "200x200"
+    prompt: |
+      Isometric 3D icon of global network,
+      globe with connection lines,
+      nodes representing different countries,
+      blue gradient colors,
+      clean vector style,
+      white background,
+      professional icon design
