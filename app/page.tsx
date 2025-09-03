@@ -360,7 +360,7 @@ export default function Home() {
       {/* CTA Section */}
       <section className="relative py-24 px-4 overflow-hidden">
         {/* 背景グラデーション */}
-        <div className="absolute inset-0 bg-gradient-to-r from-primary-500 via-purple-500 to-secondary-500 animate-gradient" />
+        <div className="absolute inset-0 bg-gradient-to-r from-primary-600 via-purple-600 to-secondary-600 animate-gradient" />
         
         {/* 装飾パターン */}
         <div className="absolute inset-0 opacity-10">
@@ -395,7 +395,7 @@ export default function Home() {
           >
             <Link 
               href="/simulator"
-              className="inline-flex items-center px-10 py-5 bg-white text-primary-600 rounded-2xl font-bold text-xl hover:bg-gray-50 transform transition-all duration-300 hover:scale-105 shadow-2xl"
+              className="inline-flex items-center px-10 py-5 bg-white text-primary-700 rounded-2xl font-bold text-xl hover:bg-gray-50 transform transition-all duration-300 hover:scale-105 shadow-2xl"
             >
               <Zap className="mr-3 w-6 h-6" />
               無料で試算する

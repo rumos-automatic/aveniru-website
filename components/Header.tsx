@@ -18,11 +18,11 @@ const Header = () => {
   ];
 
   return (
-    <header className="fixed top-0 w-full bg-white shadow-md z-50">
+    <header className="fixed top-0 w-full bg-white/95 backdrop-blur-md shadow-lg z-50 border-b border-gray-100">
       <div className="container mx-auto px-4">
         <div className="flex justify-between items-center h-16">
           <Link href="/" className="flex items-center">
-            <span className="text-2xl font-bold text-primary-700">AveniRu</span>
+            <span className="text-2xl font-bold bg-gradient-to-r from-primary-600 to-secondary-600 bg-clip-text text-transparent">AveniRu</span>
           </Link>
 
           {/* Desktop Navigation */}
@@ -31,7 +31,7 @@ const Header = () => {
               <Link
                 key={item.href}
                 href={item.href}
-                className="text-gray-700 hover:text-primary-600 transition-colors"
+                className="text-gray-700 hover:text-primary-600 font-medium transition-colors"
               >
                 {item.label}
               </Link>
@@ -55,7 +55,7 @@ const Header = () => {
               <Link
                 key={item.href}
                 href={item.href}
-                className="block py-2 text-gray-700 hover:text-primary-600 transition-colors"
+                className="block py-2 text-gray-700 hover:text-primary-600 font-medium transition-colors"
                 onClick={() => setIsMenuOpen(false)}
               >
                 {item.label}

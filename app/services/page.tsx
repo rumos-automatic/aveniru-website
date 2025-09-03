@@ -30,7 +30,7 @@ export default function ServicesPage() {
             initial={{ opacity: 0, x: -20 }}
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true }}
-            className="bg-white rounded-lg shadow-lg p-8"
+            className="bg-white rounded-lg shadow-xl p-8 border border-gray-100"
           >
             <div className="flex items-center mb-6">
               <Package className="w-8 h-8 text-primary-600 mr-3" />
@@ -97,7 +97,7 @@ export default function ServicesPage() {
             initial={{ opacity: 0, x: -20 }}
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true }}
-            className="bg-white rounded-lg shadow-lg p-8"
+            className="bg-white rounded-lg shadow-xl p-8 border border-gray-100"
           >
             <div className="flex items-center mb-6">
               <Truck className="w-8 h-8 text-primary-600 mr-3" />
@@ -149,7 +149,7 @@ export default function ServicesPage() {
             initial={{ opacity: 0, x: -20 }}
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true }}
-            className="bg-white rounded-lg shadow-lg p-8"
+            className="bg-white rounded-lg shadow-xl p-8 border border-gray-100"
           >
             <div className="flex items-center mb-6">
               <Shield className="w-8 h-8 text-primary-600 mr-3" />
@@ -205,7 +205,7 @@ export default function ServicesPage() {
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
-          className="bg-primary-50 rounded-lg p-8 text-center"
+          className="bg-gradient-to-br from-primary-50 to-secondary-50 rounded-lg p-8 text-center border border-primary-100"
         >
           <h2 className="text-2xl font-semibold mb-4 text-gray-800">
             まずはお気軽にご相談ください

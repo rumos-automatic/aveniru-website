@@ -151,9 +151,9 @@ export default function SimulatorPage() {
 
         <div className="grid lg:grid-cols-2 gap-8">
           {/* 入力フォーム */}
-          <div className="bg-white rounded-lg shadow-lg p-6">
+          <div className="bg-white rounded-lg shadow-xl p-6 border border-gray-100">
             <h2 className="text-2xl font-semibold mb-6 text-gray-800 flex items-center">
-              <Calculator className="mr-2" />
+              <Calculator className="mr-2 text-primary-600" />
               入力項目
             </h2>
 
@@ -295,7 +295,7 @@ export default function SimulatorPage() {
 
           {/* 計算結果 */}
           <div className="space-y-6">
-            <div className="bg-white rounded-lg shadow-lg p-6">
+            <div className="bg-white rounded-lg shadow-xl p-6 border border-gray-100">
               <h2 className="text-2xl font-semibold mb-6 text-gray-800">計算結果</h2>
               
               <div className="space-y-3">
@@ -331,7 +331,7 @@ export default function SimulatorPage() {
             </div>
 
             {/* コスト内訳グラフ */}
-            <div className="bg-white rounded-lg shadow-lg p-6">
+            <div className="bg-white rounded-lg shadow-xl p-6 border border-gray-100">
               <h3 className="text-xl font-semibold mb-4 text-gray-800">コスト内訳</h3>
               <ResponsiveContainer width="100%" height={300}>
                 <PieChart>
