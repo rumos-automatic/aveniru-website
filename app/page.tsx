@@ -110,7 +110,7 @@ export default function Home() {
             >
               <Link 
                 href="/simulator"
-                className="inline-flex items-center px-8 py-4 bg-gradient-to-r from-primary-500 to-primary-600 text-white rounded-xl font-bold text-lg hover:from-primary-600 hover:to-primary-700 transform transition-all duration-300 hover:scale-105 shadow-xl hover-float"
+                className="inline-flex items-center px-8 py-4 bg-gradient-to-r from-primary-100 to-secondary-100 text-primary-700 border-2 border-primary-200 rounded-xl font-bold text-lg hover:from-primary-200 hover:to-secondary-200 transform transition-all duration-300 hover:scale-105 shadow-xl hover-float"
               >
                 <Zap className="mr-2 w-5 h-5" />
                 料金シミュレーター
@@ -397,7 +397,7 @@ export default function Home() {
           >
             <Link 
               href="/simulator"
-              className="inline-flex items-center px-10 py-5 bg-white text-primary-700 rounded-2xl font-bold text-xl hover:bg-gray-50 transform transition-all duration-300 hover:scale-105 shadow-2xl"
+              className="inline-flex items-center px-10 py-5 bg-gradient-to-r from-primary-100 to-secondary-100 text-primary-700 border-2 border-primary-200 rounded-2xl font-bold text-xl hover:from-primary-200 hover:to-secondary-200 transform transition-all duration-300 hover:scale-105 shadow-2xl"
             >
               <Zap className="mr-3 w-6 h-6" />
               無料で試算する
