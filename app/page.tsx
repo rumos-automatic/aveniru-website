@@ -83,7 +83,7 @@ export default function Home() {
               transition={{ duration: 0.6, delay: 0.1 }}
               className="text-5xl md:text-6xl lg:text-7xl font-bold mb-8 leading-tight"
             >
-              <span className="bg-gradient-to-r from-primary-600 via-blue-600 to-secondary-600 bg-clip-text text-transparent">
+              <span className="text-primary-700 font-extrabold">
                 海外から日本へ
               </span>
               <br />
@@ -186,7 +186,7 @@ export default function Home() {
             className="text-center mb-16"
           >
             <h2 className="text-4xl md:text-5xl font-bold mb-4">
-              <span className="bg-gradient-to-r from-primary-600 to-secondary-600 bg-clip-text text-transparent">
+              <span className="text-gray-800">
                 AveniRuの強み
               </span>
             </h2>
@@ -229,7 +229,7 @@ export default function Home() {
             className="text-center mb-16"
           >
             <h2 className="text-4xl md:text-5xl font-bold mb-4">
-              <span className="bg-gradient-to-r from-primary-600 to-secondary-600 bg-clip-text text-transparent">
+              <span className="text-gray-800">
                 シンプルな7ステップ
               </span>
             </h2>
@@ -292,7 +292,7 @@ export default function Home() {
             className="text-center mb-16"
           >
             <h2 className="text-4xl md:text-5xl font-bold mb-4">
-              <span className="bg-gradient-to-r from-primary-600 to-secondary-600 bg-clip-text text-transparent">
+              <span className="text-gray-800">
                 信頼性と運営基準
               </span>
             </h2>
@@ -417,7 +417,7 @@ export default function Home() {
             className="text-center mb-16"
           >
             <h2 className="text-4xl md:text-5xl font-bold mb-4">
-              <span className="bg-gradient-to-r from-primary-600 to-secondary-600 bg-clip-text text-transparent">
+              <span className="text-gray-800">
                 よくあるご質問
               </span>
             </h2>
