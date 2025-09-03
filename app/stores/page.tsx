@@ -102,7 +102,7 @@ export default function StoresPage() {
                   href={store.url}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="block w-full text-center px-4 py-2 bg-gradient-to-r from-primary-600 to-primary-700 text-white rounded-lg font-semibold hover:from-primary-700 hover:to-primary-800 transition-colors"
+                  className="block w-full text-center px-4 py-2 bg-white border-2 border-primary-600 text-primary-600 rounded-lg font-semibold hover:bg-primary-50 transition-colors"
                 >
                   ストアを見る
                 </a>
