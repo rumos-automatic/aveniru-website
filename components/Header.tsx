@@ -22,7 +22,7 @@ const Header = () => {
       <div className="container mx-auto px-4">
         <div className="flex justify-between items-center h-16">
           <Link href="/" className="flex items-center">
-            <span className="text-2xl font-bold bg-gradient-to-r from-primary-600 to-secondary-600 bg-clip-text text-transparent">AveniRu</span>
+            <span className="text-2xl font-bold text-primary-600">AveniRu</span>
           </Link>
 
           {/* Desktop Navigation */}
@@ -40,7 +40,7 @@ const Header = () => {
 
           {/* Mobile Menu Button */}
           <button
-            className="lg:hidden"
+            className="lg:hidden text-gray-700"
             onClick={() => setIsMenuOpen(!isMenuOpen)}
             aria-label="メニュー"
           >
