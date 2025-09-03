@@ -81,28 +81,30 @@ export default function StoresPage() {
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: index * 0.1 }}
-              className="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition-shadow"
+              className="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition-shadow flex flex-col"
             >
               <div className={`h-3 bg-gradient-to-r ${store.color}`} />
-              <div className="p-6">
-                <h2 className="text-2xl font-bold mb-2 text-gray-800">{store.name}</h2>
-                <p className="text-sm text-gray-500 mb-4">{store.categories}</p>
-                <p className="text-gray-600 mb-4">{store.description}</p>
-                
-                <div className="space-y-2 mb-6">
-                  {store.features.map((feature, idx) => (
-                    <div key={idx} className="flex items-center text-sm text-gray-600">
-                      <span className="text-green-500 mr-2">✓</span>
-                      {feature}
-                    </div>
-                  ))}
+              <div className="p-6 flex flex-col flex-grow">
+                <div className="flex-grow">
+                  <h2 className="text-2xl font-bold mb-2 text-gray-800">{store.name}</h2>
+                  <p className="text-sm text-gray-500 mb-4">{store.categories}</p>
+                  <p className="text-gray-600 mb-4">{store.description}</p>
+                  
+                  <div className="space-y-2 mb-6">
+                    {store.features.map((feature, idx) => (
+                      <div key={idx} className="flex items-center text-sm text-gray-600">
+                        <span className="text-green-500 mr-2">✓</span>
+                        {feature}
+                      </div>
+                    ))}
+                  </div>
                 </div>
                 
                 <a
                   href={store.url}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="block w-full text-center px-4 py-2 bg-white border-2 border-primary-600 text-primary-600 rounded-lg font-semibold hover:bg-primary-50 transition-colors"
+                  className="block w-full text-center px-4 py-2 bg-white border-2 border-primary-600 text-primary-600 rounded-lg font-semibold hover:bg-primary-50 transition-colors mt-auto"
                 >
                   ストアを見る
                 </a>
