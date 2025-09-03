@@ -57,7 +57,7 @@ export default function Home() {
       {/* Hero Section with Gradient */}
       <section className="relative overflow-hidden">
         {/* 背景グラデーション */}
-        <div className="absolute inset-0 bg-gradient-to-br from-primary-50 via-white to-secondary-50 animate-gradient" />
+        <div className="absolute inset-0 bg-gradient-to-br from-blue-50 via-white to-orange-50" />
         
         {/* 装飾的な図形 */}
         <div className="absolute top-20 left-10 w-72 h-72 bg-primary-200 rounded-full filter blur-3xl opacity-30 animate-float" />
@@ -69,11 +69,11 @@ export default function Home() {
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6 }}
-              className="mb-6"
+              className="mb-8"
             >
-              <span className="inline-flex items-center px-4 py-2 rounded-full bg-gradient-to-r from-primary-100 to-secondary-100 text-primary-700 text-sm font-semibold mb-6">
-                <Sparkles className="w-4 h-4 mr-2" />
-                国際輸送のプロフェッショナル
+              <span className="inline-flex items-center px-6 py-3 rounded-full bg-gradient-to-r from-primary-100 to-secondary-100 text-primary-700 text-lg font-bold mb-6 shadow-lg">
+                <Sparkles className="w-5 h-5 mr-2" />
+                🚢 国際輸送のプロフェッショナル
               </span>
             </motion.div>
             
@@ -81,13 +81,15 @@ export default function Home() {
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, delay: 0.1 }}
-              className="text-5xl md:text-6xl lg:text-7xl font-bold mb-6 leading-tight"
+              className="text-5xl md:text-6xl lg:text-7xl font-bold mb-8 leading-tight"
             >
-              <span className="bg-gradient-to-r from-primary-600 to-secondary-600 bg-clip-text text-transparent">
+              <span className="bg-gradient-to-r from-primary-600 via-blue-600 to-secondary-600 bg-clip-text text-transparent">
                 海外から日本へ
               </span>
               <br />
-              <span className="text-gray-800">輸入をもっとシンプルに</span>
+              <span className="text-gray-800">輸入をもっと</span>
+              <span className="bg-gradient-to-r from-orange-500 to-pink-500 bg-clip-text text-transparent">シンプル</span>
+              <span className="text-gray-800">に</span>
             </motion.h1>
             
             <motion.p 
